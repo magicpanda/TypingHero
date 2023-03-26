@@ -1,0 +1,77 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+#gameArea {
+    width: 1000px;
+    height: 500px;
+    border: 0px solid #000;
+    position: relative;
+    overflow: hidden;
+    outline: none;
+    background-image: url("https://img2.baidu.com/it/u=2402919302,3743682924&fm=253&fmt=auto&app=138&f=JPEG?w=1250&h=500");
+    /* background-attachment: fixed; */
+    background-size: cover;
+    /* filter: grayscale(5) */
+}
+
+.letter {
+    position: absolute;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+/* #correctCount {
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    font-size: 24px;
+    font-weight: bold;
+    color: lightgray;
+} */
+
+h3 {
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(57, 54, 111)
+}
+
+#gameControl {
+    position: absolute;
+    left: 30%;
+    top: 8%;
+    vertical-align: middle;
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(57, 54, 111)
+}
+#timer {
+    position: relative;
+    width: fit-content;
+}
+
+button {
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(57, 54, 111)
+}
+div p {
+    position: inherit;
+    left: 2%;
+    top: 2%;
+    font-size: 18px;
+    font-weight: bold;
+    color: lightgray;
+}

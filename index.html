@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>打字游戏</title>
+    <link rel="stylesheet" href="styles.css">
+    <audio id="cai" src="cai.mp3"></audio>
+    <audio id="life" src="life.mp3"></audio>
+    <audio id="eat" src="eat.mp3"></audio>
+    <audio id="fail" src="fail.mp3"></audio>
+    <audio id="brick" src="brick.mp3"></audio>
+    <audio id="myAudio" volume=0.2 loop autoplay>
+        <source src="bg.mp3" type="audio/mpeg"/>
+    </audio>
+
+    
+    <!-- <button onclick="pauseAudio()">暂停</button> -->
+    <!-- <input type="range" min="0" max="1" step="0.1" value="0.2" onchange="changeVolume(this.value)"> -->
+</head>
+<body>
+    <h3>⌨️⌨️ Games - For Miller⌨️⌨️</h3>
+    <div id="gameControl">
+        <!-- <div id="timer">00:00:00</div> -->
+        <button id="timer" onclick="startGame()">开始游戏</button>
+        慢<input type="range" min="500" max="3000" value="1500" step="10" id="timeRange">快
+    </div>
+    
+
+    <div id="gameArea" tabindex="0">
+        <p>成功 💎：<span id="correctCount">0</span></p>
+        <p>失败 👿：<span id="failCount">0</span></p>
+        <p>Mario 🍄：<span id="lifeCount">0</span></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
